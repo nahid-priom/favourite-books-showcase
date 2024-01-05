@@ -20,4 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
     bookListContainer.appendChild(bookCard);
   });
+  function toggleNavList() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+  }
+
+  // Add event listener to the mobile menu icon
+  const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+  mobileMenuIcon.addEventListener('click', toggleNavList);
 });

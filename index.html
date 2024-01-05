@@ -9,15 +9,22 @@
   <body>
     <div class="container">
       <nav>
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>Products</a></li>
-          <li><a>Category</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contacts</a></li>
-        </ul>
+        <div class="navbar">
+          <img class="logo" src="assets/logo.png" />
+          <div class="mobile-menu-icon" onclick="toggleNavList()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a>Home</a></li>
+            <li><a>Category</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contacts</a></li>
+          </ul>
+        </div>
       </nav>
-      <h1 class="header">My favourite Books</h1>
+      <h1 class="title">My favourite Books</h1>
       <section id="bookList"></section>
       <script src="script.js"></script>
     </div>
